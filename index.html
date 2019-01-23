@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/lux/bootstrap.min.css">
+    <title>Mars Data Scraping</title>
+</head>
+
+<body style="background:navy;">
+    <div class="container" style="background:white;">
+        <div class="jumbotron text-center" style="width: 100%;">
+            <h1>Mars Data Scraping</h1>
+            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        </div>
+        <h1 style="color:white; text-align:center; margin-bottom:30px; border-bottom:1px solid white; padding-bottom:10px;">
+            Mars Information
+        </h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Latest Mars News</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4>NASA's InSight Places First Instrument on Mars</h4>
+                        <p>In deploying its first instrument onto the surface of Mars, the lander completes a major mission milestone.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Latest Mars Weather</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>{{ Sol 2291 (2019-01-16), high -8C/17F, low -70C/-93F, pressure at 8.23 hPa, daylight 06:46-18:55pic.twitter.com/IRiqxlJqvT}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Mars Facts</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table>
+                            {{ mission_to_mars.fact_df}}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="color:white; text-align:center; margin-bottom:30px; border-bottom:1px solid white; padding-bottom:10px;">
+    </div>
+</body>
+
+</html>
